@@ -12,7 +12,7 @@ def create_ec2_instance():
             MaxCount=1,
             InstanceType='t2.micro',  # Replace with your desired instance type
             KeyName='demo',  # Replace with your key pair name
-            SecurityGroupIds=['sg-xxxxxxxx'],  # Replace with your security group ID
+            SecurityGroupIds=['sg-111'],  # Replace with your security group ID
             SubnetId='subnet-xxxxxxxx'  # Replace with your subnet ID
         )
         print(f'EC2 Instance Created with ID: {instance[0].id}')
