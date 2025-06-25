@@ -10,7 +10,7 @@ def create_ec2_instance():
             ImageId='ami-0c55b159cbfafe1f0',  # Replace with your desired AMI ID
             MinCount=1,
             MaxCount=1,
-            InstanceType='t2.micro',  # Replace with your desired instance type
+            InstanceType='t2.medium',  # Replace with your desired instance type
             KeyName='demo',  # Replace with your key pair name
             SecurityGroupIds=['sg-111'],  # Replace with your security group ID
             SubnetId='subnet-xxxxxxxx'  # Replace with your subnet ID
