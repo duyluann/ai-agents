@@ -11,7 +11,7 @@ def create_ec2_instance():
             MinCount=1,
             MaxCount=1,
             InstanceType='t2.micro',  # Replace with your desired instance type
-            KeyName='your-key-pair',  # Replace with your key pair name
+            KeyName='demo',  # Replace with your key pair name
             SecurityGroupIds=['sg-xxxxxxxx'],  # Replace with your security group ID
             SubnetId='subnet-xxxxxxxx'  # Replace with your subnet ID
         )
