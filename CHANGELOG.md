@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.1](https://github.com/duyluann/ai-agents/compare/v1.0.0...v1.0.1) (2025-06-25)
+
+
+### Bug Fixes
+
+* Update pr-agent.yml ([#5](https://github.com/duyluann/ai-agents/issues/5)) ([cea0c7d](https://github.com/duyluann/ai-agents/commit/cea0c7dc5895cfd7b24208a2739631dfc694e0ed))
+
 # 1.0.0 (2025-06-25)
 
 
