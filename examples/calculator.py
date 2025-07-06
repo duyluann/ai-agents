@@ -1,7 +1,6 @@
 class Calculator:
     def add(self, a, b):
-        # Intentionally incorrect: should be a + b
-        return a - b
+        return a + b
 
     def multiply(self, a, b):
         # Correct implementation
