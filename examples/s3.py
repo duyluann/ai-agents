@@ -25,6 +25,10 @@ def create_s3_bucket(bucket_name, region=None):
     except Exception as e:
         print(f"Error creating S3 bucket: {e}")
 
+
+
 if __name__ == "__main__":
     # Example usage
-    create_s3_bucket('your-unique-bucket-name', region='us-west-2')
+    import uuid
+    unique_bucket_name = f'example-bucket-{uuid.uuid4().hex[:8]}'
+    create_s3_bucket(unique_bucket_name, region='us-west-2')
