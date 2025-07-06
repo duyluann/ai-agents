@@ -16,14 +16,18 @@ def create_s3_bucket(bucket_name, region=None):
     
     s3 = boto3.client('s3', region_name=region)
     try:
-        if region is None:
-            s3.create_bucket(Bucket=bucket_name)
-        else:
+        if region and region != 'us-east-1':
             location = {'LocationConstraint': region}
             s3.create_bucket(Bucket=bucket_name, CreateBucketConfiguration=location)
+        else:
+            s3.create_bucket(Bucket=bucket_name)
         print(f'S3 Bucket Created: {bucket_name}')
-    except Exception as e:
+    except ClientError as e:
         print(f"Error creating S3 bucket: {e}")
+        raise
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        raise
 
 
 
