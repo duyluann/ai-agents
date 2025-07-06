@@ -7,7 +7,8 @@ class Calculator:
         return a * b
 
     def divide(self, a, b):
-        # Missing division by zero check (code smell)
+        if b == 0:
+            raise ValueError("Cannot divide by zero")
         return a / b
 
 # Example usage:
